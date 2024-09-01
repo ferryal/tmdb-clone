@@ -1,9 +1,9 @@
 "use client"
 
 import Link from "next/link"
-import { NavItem, navigation, siteConfig } from "@/config"
+import { NavItem, navigation } from "@/config"
 import { useDialog } from "@/hooks"
-import { Bug, MenuIcon } from "lucide-react"
+import { MenuIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import {
@@ -16,13 +16,11 @@ import { Button, buttonVariants } from "@/components/ui/button"
 import {
   Drawer,
   DrawerContent,
-  DrawerFooter,
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
 import { Separator } from "@/components/ui/separator"
-import { Icons } from "@/components/icons"
 
 export const SiteMenu = () => {
   const [open, setOpen] = useDialog()
